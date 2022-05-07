@@ -10,6 +10,6 @@ app.use(express.json());
 
 app.use(routes);
 
-app.listen( 3335, ()=>{
+app.listen(process.env.PORT || 3335, ()=>{
     console.log("Server is running!")
 });
